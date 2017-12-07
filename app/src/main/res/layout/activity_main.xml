@@ -19,6 +19,7 @@
             android:id="@+id/sensor_list"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
             android:text="(Placeholder)" />
 
     </ScrollView>
