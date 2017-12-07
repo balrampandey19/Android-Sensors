@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class SensorsListActivity extends AppCompatActivity {
     private SensorManager mSensorManager;
     String sensorText = "";
 
