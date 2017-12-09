@@ -22,7 +22,7 @@
                 android:id="@+id/sensor_light"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=": "
+                android:text="Light: "
                 android:textSize="18dp" />
 
             <TextView
