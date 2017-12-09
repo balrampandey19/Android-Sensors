@@ -12,6 +12,8 @@ public class LightAndProximitySensor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_light_and_proximity_sensor);
         light = (TextView)findViewById(R.id.sensor_light);
+        proximity = (TextView)findViewById(R.id.sensor_proximity);
+
 
     }
 }
