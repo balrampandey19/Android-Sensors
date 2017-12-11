@@ -30,7 +30,8 @@ public class LightAndProximitySensor extends AppCompatActivity implements Sensor
         mSensorProximity =
                 mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
         mSensorLight = mSensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
-
+        setLightSensor();
+        setProximitySensor();
 
     }
 
