@@ -7,6 +7,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class LightAndProximitySensor extends AppCompatActivity implements SensorEventListener {
@@ -17,12 +18,14 @@ public class LightAndProximitySensor extends AppCompatActivity implements Sensor
     private String error;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_light_and_proximity_sensor);
         light = findViewById(R.id.sensor_light);
         proximity = findViewById(R.id.sensor_proximity);
+
         error = getResources().getString(R.string.error_no_sensor);
 
         mSensorManager =

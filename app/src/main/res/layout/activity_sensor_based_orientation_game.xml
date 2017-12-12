@@ -1,17 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/label_group"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:layout_margin="16dp"
-    android:orientation="vertical"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
     app:layout_constraintTop_toTopOf="parent">
 
 
+    <ImageView
+        android:id="@+id/spot_top"
+        android:layout_width="@dimen/spot_size"
+        android:layout_height="@dimen/spot_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spot"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/spot_bottom"
+        android:layout_width="@dimen/spot_size"
+        android:layout_height="@dimen/spot_size"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/spot"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/spot_right"
+        android:layout_width="@dimen/spot_size"
+        android:layout_height="@dimen/spot_size"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spot"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/spot_left"
+        android:layout_width="@dimen/spot_size"
+        android:layout_height="@dimen/spot_size"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/spot"
+        tools:ignore="ContentDescription" />
     <!-- Labels -->
     <TextView
         android:id="@+id/label_azimuth"

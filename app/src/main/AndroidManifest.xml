@@ -11,14 +11,17 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SensorsListActivity"></activity>
         <activity android:name=".BaseActicity">
+
+        </activity>
+        <activity android:name=".LightAndProximitySensor" />
+        <activity android:name=".SensorBasedOrientationGame">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".LightAndProximitySensor" />
-        <activity android:name=".SensorBasedOrientationGame"></activity>
     </application>
 
 </manifest>
